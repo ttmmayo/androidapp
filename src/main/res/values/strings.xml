@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Target Practice</string>
+    <string name="developers">Tiana Mayo</string>
+    <string name="play_button">Start Play</string>
+    <string name="play_instructions">Roll the ball towards the purple target,
+        while avoiding the orange obstacles. Tilt the device to move the ball.</string>
+</resources>

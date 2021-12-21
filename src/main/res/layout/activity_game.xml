@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:id="@+id/cl_main">
+
+  <LinearLayout
+      android:id="@+id/ll_game_activity"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_margin="30dp"
+      android:visibility="gone"
+      android:background="@color/colorGameOver"
+      android:alpha="0.9">
+
+    <TextView
+        android:id="@+id/gameOverTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:text = "Game Over"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:text="Final Score:"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:id="@+id/finalScoreTextView"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorBlack"
+        android:text="See High Scores"
+        android:onClick="seeHighScoresButton"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/colorBlack"
+        android:text="Return to Main Menu"
+        android:onClick="returnToMainMenuButton"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/pointTextView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text = "0"
+      android:layout_margin="10dp"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
